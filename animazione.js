@@ -1,6 +1,6 @@
 import gsap from gsap;
 
-const IMAGE_URL = "https://static.wixstatic.com/media/801d74_25233d4e6d2b4c61af76af42a9aeed0a~mv2.jpg";
+const IMAGE_URL = "https://raw.githubusercontent.com/Erchicco/animazioneWix/main/IMG_8508.jpg?token=GHSAT0AAAAAACSDQE66TJTKZRM2E2YVRVUYZR54MCQ";
 
 function createImage (name) {
     const imageElement = document.createElement("image");
@@ -16,3 +16,6 @@ function createImage (name) {
     duration: 1000,
     x:2000
   });
+
+class HelloWorld extends HTMLElement { connectedCallback() { this.innerHTML = 'Hello World!'; } } customElements.define('hello-world', HelloWorld);
+CustomElementRegistry.define('hello-world', HelloWorld);
